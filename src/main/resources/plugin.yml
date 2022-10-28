@@ -1,0 +1,32 @@
+name: Dirt-Clearlag
+version: '${version}'
+main: net.dirtcraft.plugins.dirtclearlag.DirtClearlag
+api-version: 1.16
+authors: [ DeJustinHD ]
+description: Adds clearlag functionality to DirtCraft 1.16.5+
+commands:
+    dirtclearlag:
+        description: Base command for all clearlag commands.
+        aliases: [ dcl ]
+permissions:
+    dirtclearlag.base:
+        description: Base permission to use clearlag commands.
+    dirtclearlag.list:
+        description: List all whitelisted items and blacklisted mobs.
+    dirtclearlag.add:
+        description: Add mobs and items to the whitelist/blacklist.
+    dirtclearlag.remove:
+        description: Remove mobs or items from the whitelist/blacklist.
+    dirtclearlag.reload:
+        description: Reload the config.
+    dirtclearlag.common:
+        children:
+            dirtclearlag.base: true
+            dirtclearlag.list: true
+    dirtclearlag.admin:
+        children:
+            dirtclearlag.base: true
+            dirtclearlag.list: true
+            dirtclearlag.add: true
+            dirtclearlag.remove: true
+            dirtclearlag.reload: true

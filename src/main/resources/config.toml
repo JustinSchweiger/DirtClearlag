@@ -1,0 +1,50 @@
+# Configuration file for Dirt-Clearlag
+
+[general]
+    # Wether debug-messages should be printed to the console (has some usefull information)
+    # Default: true
+    debug = true
+
+    # Wether debug-messages should be colored in the console
+    # Default: true
+    coloredDebug = true
+
+    # Every how many seconds should clearlag run? (Needs to be at least 180 seconds)
+    # Default: 300
+    interval = 300
+
+    # How many list entries should be shown in the list command?
+    # Default: 10
+    listEntries = 10
+
+
+[sounds]
+    # Wether a sound should be played when the items are cleared.
+    # Default: true
+    playClearSound = true
+    # The sound that should be played.
+    # Default: minecraft:block.conduit.activate
+    clearSound = "minecraft:block.conduit.activate"
+
+    # Wether a sound should be played the last 10 seconds before a clear.
+    # Default: true
+    playCountdownSound = true
+    # The sound that should be played.
+    # Default: minecraft:entity.experience_orb.pickup
+    countdownSound = "minecraft:entity.experience_orb.pickup"
+
+    # Wether a reminder sound should be played that occurs 3 minutes, 1 minute and 30s before a clear.
+    # Default: true
+    playReminderSound = true
+    # The sound that should be played.
+    # Default: minecraft:entity.item.pickup
+    reminderSound = "minecraft:entity.item.pickup"
+
+[bossbar]
+    # Change the bar colors for the bossbar here.
+    # Available colors: blue, green, pink, purple, red, white, yellow
+    # At 10 Seconds the bar will automatically turn red
+    # Default: purple, pink, red
+    bar180Sec = "blue"
+    bar60Sec = "purple"
+    bar30Sec = "pink"
